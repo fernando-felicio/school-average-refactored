@@ -8,7 +8,7 @@ public class Student {
 	public double thirdSemester;
 	
 	public double annualAverage() {
-		return this.firstSemester + this.secondemester + this.secondemester;
+		return this.firstSemester + this.secondemester + this.thirdSemester;
 	}
 	
 	public void showResult() {
@@ -17,7 +17,7 @@ public class Student {
 		}
 		else {
 			System.out.println("FAILED");
-			double missingPoints = 100 - annualAverage();
+			double missingPoints = 60 - annualAverage();
 			System.out.printf("Missing %.2f Points", missingPoints);
 		}
 	}
